@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="navegacion">
+            <a href="index.html" class="enlaces"><li>Inicio</li></a>
+            <a href="imagenes.html" class="enlaces"><li>Imágenes, Enlaces y Formato</li></a>
+            <a href="listas.html" class="enlaces"><li>Listas</li></a>
+            <a href="estilo.html" class="enlaces"><li>Estilo</li></a>
+        </ul>
+    </nav>
+
+    <h1>Estilo con CSS</h1>
+
+    
+
+    <main class="principal">
+
+    <h3>¿Qué es CSS?</h3>
+    <p>CSS significa <strong>Cascading Style Sheets</strong> (Hojas de estilo en cascada).</p>
+    <p>Sirve para dar estilo a páginas HTML, como cambiar colores, tamaños, márgenes, posiciones, etc.</p>
+
+    <h3>¿Cómo se puede usar CSS?</h3>
+
+    <h4>1. CSS externo (el más recomendado)</h4>
+    <p>En el header del HTML: &lt;link rel="stylesheet" href="style.css"&gt; y crear archivo style.css</p>
+
+
+    <h4>2. CSS en la cabecera</h4>
+    <p>
+&lt;style&gt;<br>
+  body { background-color: beige; }<br>
+&lt;/style&gt;
+    </p>
+
+    <h4>3. CSS en línea (no recomendado)</h4>
+    <div class="bloque">&lt;p style="color: red;"&gt;Texto en rojo&lt;/p&gt;</div>
+
+    <h3>Sintaxis básica</h3>
+    <div class="bloque">
+selector {<br>
+&nbsp;&nbsp;propiedad: valor;<br>
+}
+    </div>
+
+    <p><strong>Ejemplo:</strong></p>
+    <div class="bloque">
+p {<br>
+&nbsp;&nbsp;color: blue;<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+}
+    </div>
+
+    <h3>Selectores más usados</h3>
+    <ul>
+        <li>p: Selecciona todos los párrafos</li>
+        <li>.nombre-clase: Selecciona todos los elementos con esa clase</li>
+        <li>#nombre-id: Selecciona un único elemento con ese ID</li>
+        <li>*: Selecciona todos los elementos</li>
+    </ul>
+
+    <h3>Propiedades importantes</h3>
+
+    <h4>Estilo de texto:</h4>
+    <ul>
+        <li>color: cambia el color del texto</li>
+        <li>font-size: cambia el tamaño de la fuente</li>
+        <li>font-family: cambia el tipo de letra</li>
+        <li>text-align: alinea el texto</li>
+        <li>text-decoration: subraya, tacha, etc.</li>
+    </ul>
+
+    <h4>Estilo de cajas:</h4>
+    <ul>
+        <li>background-color: cambia el color de fondo</li>
+        <li>margin: espacio exterior</li>
+        <li>padding: espacio interior</li>
+        <li>border: añade un borde</li>
+        <li>width / height: tamaño del elemento</li>
+    </ul>
+
+    <h3>Colores</h3>
+    <p>Se pueden escribir de distintas formas:</p>
+    <div class="bloque">
+color: red;<br>
+color: #ff0000;<br>
+color: rgb(255, 0, 0);
+    </div>
+
+    <h3>Comentarios</h3>
+    <div class="bloque">/* Esto es un comentario */</div>
+
+
+
+
+
+
+
+
+        <h3>body</h3>
+        <div class="codigo">
+            <p>body {</p>
+            <p>    background-color: antiquewhite;</p>
+            <p>    margin: 0px;</p>
+            <p>    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+            <p>}</p>
+        </div>
+        <p>El estilo aplicado al <strong>body</strong> define el fondo de la página con un color beige claro <em>antiquewhite</em>, quita los márgenes por defecto con <em>margin: 0px</em>, y establece una fuente sans-serif para todo el texto, utilizando una fuente más moderna y legible como <em>'Segoe UI'</em>.</p>
+
+        <h3>h1</h3>
+        <div class="codigo">
+            <p>h1 {</p>
+            <p>    color: rgb(239, 91, 91);</p>
+            <p>    text-align: center;</p>
+            <p>    background-color: rgb(255, 202, 181);</p>
+            <p>    width: 100%;</p>
+            <p>    margin-top: 0px;</p>
+            <p>    align-items: center;</p>
+            <p>    padding: 20px 0;</p>
+            <p>}</p>
+        </div>
+        <p>El estilo de <strong>h1</strong> asigna un color rojo claro al texto (<em>rgb(239, 91, 91)</em>) y un fondo beige claro (<em>rgb(255, 202, 181)</em>). Además, el texto se centra con <em>text-align: center</em>, y se le agrega un relleno en la parte superior e inferior de 20px.</p>
+
+        <h3>h3</h3>
+        <div class="codigo">
+            <p>h3 {</p>
+            <p>    color: rgb(239, 91, 91);</p>
+            <p>    width: 100%;</p>
+            <p>    align-items: center;</p>
+            <p>    padding: 20px 0;</p>
+            <p>}</p>
+        </div>
+        <p>Al igual que en el estilo de <strong>h1</strong>, se aplica el mismo color al texto <em>rgb(239, 91, 91)</em>, y se centra con <em>padding: 20px 0</em> para agregar espacio superior e inferior.</p>
+
+        <h3>nav y .navegacion</h3>
+        <div class="codigo">
+            <p>nav {</p>
+            <p>    text-align: center;</p>
+            <p>    width: 100%;</p>
+            <p>    margin-top: -8px;</p>
+            <p>    align-items: center;</p>
+            <p>    padding: 10px 0;</p>
+            <p>}</p>
+            <p>.navegacion {</p>
+            <p>    display: flex;</p>
+            <p>    flex-direction: row;</p>
+            <p>    list-style: none;</p>
+            <p>    justify-content: space-around;</p>
+            <p>}</p>
+        </div>
+        <p>En el estilo de <strong>nav</strong>, se centra el contenido y se le da un relleno de 10px en la parte superior e inferior. Además, se utiliza <em>margin-top: -8px;</em> para ajustar el espacio superior. La clase <strong>.navegacion</strong> se aplica a una lista que se convierte en una fila flexible utilizando <em>display: flex</em>, y <em>justify-content: space-around</em> distribuye los elementos de manera uniforme.</p>
+
+        <h3>.enlaces</h3>
+        <div class="codigo">
+            <p>.enlaces {</p>
+            <p>    text-decoration: none;</p>
+            <p>    border-bottom: 2px solid rgb(239, 91, 91);</p>
+            <p>    padding: 0 10px 10px 10px;</p>
+            <p>    color: rgb(198, 5, 5);</p>
+            <p>}</p>
+        </div>
+        <p>La clase <strong>.enlaces</strong> aplica un estilo a los enlaces eliminando el subrayado por defecto con <em>text-decoration: none</em>, y agrega un borde inferior de 2px con un color rojo. También se agrega un relleno en la parte inferior de 10px.</p>
+
+        <h3>.principal</h3>
+        <div class="codigo">
+            <p>.principal {</p>
+            <p>    margin: 40px 60px;</p>
+            <p>}</p>
+        </div>
+        <p>La clase <strong>.principal</strong> agrega márgenes de 40px en la parte superior e inferior, y 60px en los lados izquierdo y derecho del contenido.</p>
+
+        <h3>img</h3>
+        <div class="codigo">
+            <p>img {</p>
+            <p>    height: 200px;</p>
+            <p>}</p>
+        </div>
+        <p>El estilo aplicado a las imágenes establece una altura de 200px, lo que controla el tamaño de las imágenes en la página.</p>
+
+        <h3>#lista_ordenada y #lista_desordenada</h3>
+        <div class="codigo">
+            <p>#lista_ordenada {</p>
+            <p>    color: palevioletred;</p>
+            <p>}</p>
+            <p>#lista_desordenada {</p>
+            <p>    color: lightskyblue;</p>
+            <p>}</p>
+        </div>
+        <p>Los estilos de <strong>#lista_ordenada</strong> y <strong>#lista_desordenada</strong> cambian el color del texto de las listas ordenadas a <em>palevioletred</em> y el color del texto de las listas desordenadas a <em>lightskyblue</em>.</p>
+
+        <h3>.link</h3>
+        <div class="codigo">
+            <p>.link {</p>
+            <p>    font-size: 20px;</p>
+            <p>}</p>
+        </div>
+        <p>La clase <strong>.link</strong> define el tamaño de la fuente de los enlaces en 20px.</p>
+
+        <h3>.codigo</h3>
+        <div class="codigo">
+            <p>.codigo {</p>
+            <p>    background-color: lightgrey;</p>
+            <p>    padding: 10px;</p>
+            <p>    width: auto;</p>
+            <p>    font-size: 16px;</p>
+            <p>}</p>
+        </div>
+        <p>La clase <strong>.codigo</strong> se utiliza para dar un fondo gris claro a los bloques de código, añadir un relleno de 10px y establecer el tamaño de la fuente a 16px para mejorar la legibilidad del código.</p>
+
+    </main>
+
+</body>
+</html>
