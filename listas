@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listas</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="navegacion">
+            <a href="index.html" class="enlaces"><li>Inicio</li></a>
+            <a href="imagenes.html" class="enlaces"><li>Imágenes, Enlaces y Formato</li></a>
+            <a href="listas.html" class="enlaces"><li>Listas</li></a>
+            <a href="estilo.html" class="enlaces"><li>Estilo</li></a>
+        </ul>
+    </nav>
+
+    <h1>¿Cómo se crea una lista?</h1>
+
+    <main class="principal">
+        <p>Hay dos tipos diferentes de listas:</p>
+        <h3 id="lista_ordenada">Lista ordenada</h3>
+        <div class="codigo">
+        <pre><code>
+    &lt;ol&gt;
+        &lt;li&gt;Elemento 1&lt;/li&gt;
+        &lt;li&gt;Elemento 2&lt;/li&gt;
+        &lt;li&gt;Elemento 3&lt;/li&gt;
+    &lt;/ol&gt;
+        </code></pre>       
+        </div>
+
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+
+        <h3 id="lista_desordenada">Lista no ordenada</h3>
+
+        <div class="codigo">
+        <pre><code>
+    &lt;ul&gt;
+        &lt;li&gt;Elemento&lt;/li&gt;
+        &lt;li&gt;Elemento&lt;/li&gt;
+        &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;/ul&gt;
+        </code></pre>    
+        </div>
+
+        <ul>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+        </ul>
+        
+        <p>La etiqueta se llama ol por Ordered List, ul por Unordered List y li viene de List Item.</p>
+
+    </main>
+
+</body>
+</html>
