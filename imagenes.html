@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imágenes</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="navegacion">
+            <a href="index.html" class="enlaces"><li>Inicio</li></a>
+            <a href="imagenes.html" class="enlaces"><li>Imágenes, Enlaces y Formato</li></a>
+            <a href="listas.html" class="enlaces"><li>Listas</li></a>
+            <a href="estilo.html" class="enlaces"><li>Estilo</li></a>
+        </ul>
+    </nav>
+
+    <h1>Imágenes, enlaces y formatos de texto</h1>
+
+    <main class="principal">
+        <h3>¿Cómo se pone una imagen?</h3>
+        <div class="codigo">
+            <pre><code>&lt;img src=&quot;images/gato.jpg&quot; alt=&quot;Un gatito&quot;&gt;</code></pre>
+            <img src="images/gato.jpg" alt="Un gatito">
+        </div>
+        <ul>
+            <li>src=&quot;images/gato.jpg&quot;: Es la ruta donde se encuentra la imagen, en este caso dentro de la carpeta del proyecto tengo una que se llama images, ahí dentro está la foto.</li>
+            <li>alt=&quot;Un gatito&quot;: La etiqueta alt sirve para mostrar el texto si la imagen no carga o la ruta es incorrecta y también para que los lectores de la gente con ceguera pueda leer el texto.</li>
+        </ul>
+    
+
+    <h3>¿Cómo se pone un enlace?</h3>
+
+    <div class="codigo">
+        <pre><code>&lt;a href=&quot;https://www.google.com&quot; class=&quot;link&quot;&gt;Este enlace lleva a Google&lt;/a&gt;
+        </code></pre>
+        <a href="https://www.google.com" class="link">Este enlace lleva a Google</a>
+    </div>
+
+    <h3>Negrita, cursiva y subrayado</h3>
+
+    <div class="codigo">
+            <pre><code>&lt;p&gt;Esta palabra está en &lt;strong&gt;negrita&lt;/strong&gt;, esta palabra está en &lt;em&gt;cursiva&lt;/em&gt; y esta palabra está &lt;u&gt;subrayada&lt;/u&gt;.&lt;/p&gt;</code></pre>
+            <p>Esta palabra está en <strong>negrita</strong>, esta palabra está en <em>cursiva</em> y esta palabra está <u>subrayada</u>.</p>
+        </div>
+
+</main>
+</body>
+</html>
