@@ -46,6 +46,7 @@ nav {
 
 .enlaces:hover {
     border-bottom: 2px solid rgb(239, 91, 91);
+    padding: 0 10px;
 }
 
 .principal {
