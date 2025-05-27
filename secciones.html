@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Secciones HTML</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="navegacion">
+            <a href="index.html" class="enlaces"><li>Inicio</li></a>
+            <a href="imagenes.html" class="enlaces"><li>Imágenes, Enlaces y Formato</li></a>
+            <a href="listas.html" class="enlaces"><li>Listas</li></a>
+            <a href="secciones.html" class="enlaces"><li>Secciones</li></a>
+            <a href="estilo.html" class="enlaces"><li>Estilo</li></a>
+        </ul>
+    </nav>
+
+    <h1>¿Qué son las secciones en HTML?</h1>
+
+    <main class="principal">
+        <p>Las secciones ayudan a organizar el contenido. Esto mejora la legibilidad del código y facilita la lectura por parte de los buscadores como Google.</p>
+
+        <h3>&lt;header&gt; — Encabezado</h3>
+        <p>Contiene el título, logo o menú de navegación.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;Mi Blog&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+        &lt;a href="#contacto"&gt;Contacto&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;nav&gt; — Navegación</h3>
+        <p>Contiene los enlaces para moverse por la web.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;nav&gt;
+    &lt;a href="#articulos"&gt;Artículos&lt;/a&gt;
+    &lt;a href="#sobre-mi"&gt;Sobre mí&lt;/a&gt;
+&lt;/nav&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;main&gt; — Contenido principal</h3>
+        <p>Es la parte más importante de la web, lo que el usuario busca ver.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;main&gt;
+    &lt;h2&gt;Últimos artículos&lt;/h2&gt;
+    &lt;article&gt;
+        &lt;h3&gt;Título del artículo&lt;/h3&gt;
+        &lt;p&gt;Este es el contenido del artículo.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;section&gt; — Sección</h3>
+        <p>Bloque temático dentro del contenido principal.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;section&gt;
+    &lt;h2&gt;Noticias recientes&lt;/h2&gt;
+    &lt;p&gt;Publicamos nuevas novedades del sector.&lt;/p&gt;
+&lt;/section&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;article&gt; — Artículo</h3>
+        <p>Contenido independiente, como publicaciones o entradas de blog.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;article&gt;
+    &lt;h3&gt;Consejos para entrenar&lt;/h3&gt;
+    &lt;p&gt;Entrenar con constancia mejora tu rendimiento.&lt;/p&gt;
+&lt;/article&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;aside&gt; — Complemento</h3>
+        <p>Contenido adicional, como barras laterales, anuncios o curiosidades.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;aside&gt;
+    &lt;h4&gt;Dato curioso&lt;/h4&gt;
+    &lt;p&gt;¿Sabías que…?&lt;/p&gt;
+&lt;/aside&gt;
+        </code></pre>
+        </div>
+
+        <h3>&lt;footer&gt; — Pie de página</h3>
+        <p>Incluye información final, como derechos de autor o contacto.</p>
+        <div class="codigo">
+        <pre><code>
+&lt;footer&gt;
+    &lt;p&gt;© 2025 Claudia Web. Todos los derechos reservados.&lt;/p&gt;
+&lt;/footer&gt;
+        </code></pre>
+        </div>
+
+        <h3>Estructura completa de ejemplo</h3>
+        <div class="codigo">
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+    &lt;main&gt;
+      &lt;section&gt;...&lt;/section&gt;
+      &lt;article&gt;...&lt;/article&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;...&lt;/aside&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+        </div>
+
+    </main>
+
+</body>
+</html>
+
